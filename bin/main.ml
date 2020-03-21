@@ -12,5 +12,6 @@ let total_command =
       "install", CommandInstall.install_command;
     ]
 
+(* %%VERSION%% is expanded by "dune subst" *)
 let () =
-  Command.run ~version:"0.0.2.3" total_command
+  Command.run ~version:"%%VERSION%%" total_command
